@@ -28,21 +28,21 @@ pipeline {
         bat 'terraform plan'
       }
     }
-
+/*
     stage('Apply') {
       steps {
         bat 'terraform apply -auto-approve'
       }
     }
+     */
     
-     /*
    stage('Destroy') {
       steps {
         bat 'terraform destroy -auto-approve'
       }
     }
        
-    */
+   
        
 
     stage('Configure AWS Credentials') {
@@ -52,6 +52,7 @@ pipeline {
                     bat 'aws configure set region ap-south-1'
             }
         }
+     /*
     stage('Invoke Lambda Function') {
       
       steps {
@@ -78,7 +79,7 @@ pipeline {
          }
       }
       }
-    
+     */
     
   
       
