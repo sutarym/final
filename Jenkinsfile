@@ -21,7 +21,7 @@ pipeline {
         }
       }
     }
-           */
+        */   
   
     stage('Plan') {
       steps {
@@ -34,13 +34,15 @@ pipeline {
         bat 'terraform apply -auto-approve'
       }
     }
+    
+     /*
    stage('Destroy') {
       steps {
         bat 'terraform destroy -auto-approve'
       }
     }
        
-   
+    */
        
 
     stage('Configure AWS Credentials') {
