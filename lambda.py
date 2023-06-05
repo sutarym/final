@@ -20,7 +20,7 @@ def lambda_handler(event, context):
         "Content-Type": "application/json"
     }
 
-  response = requests.post('https://eo6b6lgjtytgojv.m.pipedream.net',
+  response = requests.post('https://jsonplaceholder.typicode.com/posts',
                              headers=request_headers,
                              data=json.dumps(request_body))
 
